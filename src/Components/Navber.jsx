@@ -33,15 +33,10 @@ const Navber = () => {
 
 
 
-
-
-
-
-
     return (
         <div>
             <div className="bg-white">
-            <marquee className="bg-black" direction="">
+            <marquee className="bg-[#2B3440]" direction="">
                         <h1 className="text-sm font-normal text-white py-4">
                             ENJOY THE ESSENCE OF ENIGMATIC SPICES!
                         </h1>

@@ -9,3 +9,15 @@
     background-color: #BEB996;
     background-position: bottom;
 }
+
+.bg-img{
+background-image: url('https://i.ibb.co/xSXRBs4/icon-1-1.png');
+background-repeat: no-repeat;
+background-position:right bottom;
+}
+.footer-bg{
+background-image: url('https://i.ibb.co/xSXRBs4/icon-1-1.png');
+background-repeat: no-repeat;
+background-size: cover;
+width:100%;
+}

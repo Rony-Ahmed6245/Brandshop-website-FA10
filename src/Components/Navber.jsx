@@ -71,7 +71,7 @@ const Navber = () => {
                         ENJOY THE ESSENCE OF ENIGMATIC SPICES!
                     </h1>
                 </marquee>
-                <div className="max-w-screen-xl py-7  mx-auto md:px-2">
+                <div className="max-w-screen-xl py-5  mx-auto md:px-2">
 
                     <div className="px-4 md:px-4 lg:px-4   bg-none z-30 relative ">
                         <div className="navbar flex justify-between items-center ">

@@ -7,6 +7,7 @@ import Home from '../Pages/Home';
 import Cart from '../Pages/Cart';
 import Login from '../Components/Login';
 import Register from '../Components/Register';
+import PrivateRoute from './PrivateRoute';
 
 const myRoute = createBrowserRouter([
     {
@@ -20,7 +21,7 @@ const myRoute = createBrowserRouter([
             },
             {
                 path:'/addProduct',
-                element:<AddProduct></AddProduct>,
+                element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>,
             },
             {
                 path:'/cart',

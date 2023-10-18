@@ -136,7 +136,7 @@ const Navber = () => {
                                                             <div className="rounded-full flex items-center">
                                                                 <img src={user.photoURL == null ? 'https://i.ibb.co/2vkJbGD/images.png' : user.photoURL} alt="" />
                                                             </div>
-                                                            <p className="font-mono">{user.displayName == null ? 'MR' : user.displayName}</p>
+                                                            <p className="text-[10px]">{user.displayName == null ? 'MR' : user.displayName}</p>
                                                         </> :
                                                             <>
 

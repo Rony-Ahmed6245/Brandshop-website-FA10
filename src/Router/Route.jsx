@@ -1,19 +1,19 @@
 
 import { createBrowserRouter } from 'react-router-dom';
 import AddProduct from '../Pages/AddProduct';
-// import ErrrorPage from '../Components/ErrrorPage';
 import MainLayout from '../Components/MainLayout';
 import Home from '../Pages/Home';
 import Cart from '../Pages/Cart';
 import Login from '../Components/Login';
 import Register from '../Components/Register';
 import PrivateRoute from './PrivateRoute';
+import ErrorPage from '../Pages/ErrorPage';
 
 const myRoute = createBrowserRouter([
     {
         path:'/',
         element:<MainLayout></MainLayout>,
-        // errorElement:<ErrrorPage></ErrrorPage>,
+        errorElement: <ErrorPage />,
         children:[
             {
                 path:'/',
@@ -35,7 +35,8 @@ const myRoute = createBrowserRouter([
             {
                 path:'/register',
                 element:<Register></Register>,
-            }
+            },
+            
         ]
     }
 ])

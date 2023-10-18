@@ -65,7 +65,7 @@ const Navber = () => {
 
     return (
         <div>
-            <div className="bg-white ">
+            <div className="bg-[#BEB996] ">
                 <marquee className="bg-[#2B3440]" direction="">
                     <h1 className="text-sm font-normal text-white md:py-4">
                         ENJOY THE ESSENCE OF ENIGMATIC SPICES!
@@ -111,7 +111,7 @@ const Navber = () => {
                                             </> :
                                                 <>
 
-                                                    <Link to='/login' className=" btn btn-info mt-5 rounded-full font-bold bg-white text-gray-500 ">
+                                                    <Link to='/login' className=" btn-sm btn-info mt-5 rounded-full font-bold bg-white text-gray-500 ">
                                                         Login
                                                     </Link>
                                                 </>
@@ -120,7 +120,7 @@ const Navber = () => {
                                 </div>
                             </div>
                             <div className="navbar-center hidden md:flex">
-                                <ul className=" menu-horizontal flex items-center px-4 gap-2 lg:gap-10  text-gray-400 font-medium md:font-bold">
+                                <ul className=" menu-horizontal flex items-center px-4 gap-2 lg:gap-10  text-white font-medium md:font-bold">
                                     <li className="">{home}</li>
                                     <li className="">{addProduct}</li>
                                     <li>{cart}</li>
@@ -136,7 +136,7 @@ const Navber = () => {
                                                             <div className="rounded-full flex items-center">
                                                                 <img src={user.photoURL == null ? 'https://i.ibb.co/2vkJbGD/images.png' : user.photoURL} alt="" />
                                                             </div>
-                                                            <p className="text-[10px]">{user.displayName == null ? 'MR' : user.displayName}</p>
+                                                            <p className="text-[10px]">{user.displayName == null ?" MR. X" : user.displayName}</p>
                                                         </> :
                                                             <>
 

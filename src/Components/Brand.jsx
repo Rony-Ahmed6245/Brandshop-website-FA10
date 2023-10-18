@@ -1,16 +1,21 @@
 import { useState } from "react";
 import { useEffect } from "react";
+import { useLoaderData } from "react-router-dom";
 
 
 const Brand = () => {
     const [brands, setBrands] = useState([])
-    console.log(brands);
-
+    // console.log(brands);
+    const data = useLoaderData()
+    console.log(data);
+    
     useEffect(() => {
         fetch('/brand.json')
             .then(res => res.json())
             .then(data => setBrands(data))
     }, [])
+
+
 
 
 
@@ -22,7 +27,7 @@ const Brand = () => {
                     <h1 className=" text-2xl md:text-4xl font-bold uppercase text-gray-500">Our Popular Brand</h1>
                 </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 my-4">
+            <div  data-aos="zoom-in" className="grid grid-cols-1 md:grid-cols-3 gap-5 my-4">
                 {
                     brands.map(brand => (
                         <li className="shadow-md rounded-md  text-center hover:bg-[#F5F6FB] p-2 flex items-center justify-center" key={brand.id}>

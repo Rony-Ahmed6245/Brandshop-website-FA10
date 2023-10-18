@@ -21,11 +21,12 @@ const Login = () => {
         setLoginError('')
         setLoginSuccess('')
         const form = e.target;
+        const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password);
+        console.log(name, email, password);
 
-        logIn(email, password)
+        logIn( email, password)
             .then(result => {
                 console.log(result);
                 // alert('Login Successfully')

@@ -22,7 +22,7 @@ const AuthProvider = ({ children }) => {
     // logIn 
     const logIn = (email, password) => {
         setLoading(true);
-        return signInWithEmailAndPassword(auth, email, password);
+        return signInWithEmailAndPassword( auth, email, password);
     }
 
     // user management with observer

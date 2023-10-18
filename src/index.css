@@ -6,7 +6,7 @@
     background-image: url('https://i.ibb.co/Th8wfqz/pattern-1.png');
     background-repeat: no-repeat;
     /* background-size: cover;   */
-    background-color: #BEB996;
+    background-color: #D4ECC1;
     background-position: bottom;
 }
 
@@ -16,8 +16,9 @@ background-repeat: no-repeat;
 background-position:right bottom;
 }
 .footer-bg{
-background-image: url('https://i.ibb.co/xSXRBs4/icon-1-1.png');
+background-image: url('https://i.ibb.co/Qr4VsDP/Raspberry-Single-Page-overlay.png');
 background-repeat: no-repeat;
 background-size: cover;
 width:100%;
+height: fit-content;
 }

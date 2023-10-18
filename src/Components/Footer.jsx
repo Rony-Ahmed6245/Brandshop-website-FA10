@@ -2,8 +2,8 @@
 
 const Footer = () => {
     return (
-        <div>
-            <footer className="footer p-10 bg-neutral text-neutral-content ">
+        <div className="footer-bg">
+            <footer className="footer p-10  text-neutral-content max-w-7xl mx-auto px-4 md:px-4">
                 <nav>
                     <header className="footer-title">Services</header>
                     <a className="link link-hover">Branding</a>
@@ -12,7 +12,7 @@ const Footer = () => {
                     <a className="link link-hover">Advertisement</a>
                 </nav>
                 <nav>
-                    <header className="footer-title">Company</header>
+                    <header className="footer-title"><img className="" src="https://i.ibb.co/64491Jh/logo-2.png" alt="" /></header>
                     <a className="link link-hover">About us</a>
                     <a className="link link-hover">Contact</a>
                     <a className="link link-hover">Jobs</a>

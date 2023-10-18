@@ -5,6 +5,8 @@ import AddProduct from '../Pages/AddProduct';
 import MainLayout from '../Components/MainLayout';
 import Home from '../Pages/Home';
 import Cart from '../Pages/Cart';
+import Login from '../Components/Login';
+import Register from '../Components/Register';
 
 const myRoute = createBrowserRouter([
     {
@@ -24,6 +26,15 @@ const myRoute = createBrowserRouter([
                 path:'/cart',
                 element:<Cart></Cart>,
             },
+            {
+                path:'/login',
+                element:<Login></Login>,
+            }
+            ,
+            {
+                path:'/register',
+                element:<Register></Register>,
+            }
         ]
     }
 ])

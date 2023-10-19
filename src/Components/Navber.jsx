@@ -2,6 +2,8 @@ import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 import swal from 'sweetalert';
+import DarkModeToggle from "./ToggleButton";
+import { BsCart2 } from "react-icons/bs";
 
 
 const Navber = () => {
@@ -51,17 +53,18 @@ const Navber = () => {
     const cart = <NavLink
         to="/cart"
         className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? " text-black border px-2 py-1 rounded font-bold bgTrans " : ""
+            isPending ? "pending" : isActive ? "  " : ""
         }
     >
-        CART
+        <BsCart2 className=" md:text-white md:w-[30px] md:h-[30px]"></BsCart2>
+
     </NavLink>;
 
 
 
 
 
-
+    // AiOutlineShoppingCart
 
     return (
         <div>
@@ -71,6 +74,7 @@ const Navber = () => {
                         ENJOY THE ESSENCE OF ENIGMATIC SPICES!
                     </h1>
                 </marquee>
+
                 <div className="max-w-screen-xl py-5  mx-auto md:px-2">
 
                     <div className="px-4 md:px-4 lg:px-4   bg-none z-30 relative ">
@@ -85,9 +89,12 @@ const Navber = () => {
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-[50px] text-black w-[50px]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                                     </label>
                                     <ul tabIndex={0} className=" menus menu-sm dropdown-content bg-white mx-4 py-10  text-gray-400 px-4 w-40 border z-[10]  rounded  -left-20 ">
+
                                         <li className="">{home}</li>
                                         <li className="py-4">{addProduct}</li>
+
                                         <li>{cart}</li>
+                                        <li><DarkModeToggle /></li>
                                         {
                                             user ? <>
                                                 <div className="flex justify-center items-start flex-col-reverse">
@@ -121,9 +128,12 @@ const Navber = () => {
                             </div>
                             <div className="navbar-center hidden md:flex">
                                 <ul className=" menu-horizontal flex items-center px-4 gap-2 lg:gap-10  text-white font-medium md:font-bold">
-                                    <li className="">{home}</li>
-                                    <li className="">{addProduct}</li>
+                                    <ul className="lg:mr-[200px] md:lg:mr-[150px] flex gap-5 justify-center items-center">
+                                        <li className="">{home}</li>
+                                        <li className="">{addProduct}</li>
+                                    </ul>
                                     <li>{cart}</li>
+                                    <DarkModeToggle />
                                     {
                                         user ? <>
                                             <div className=" flex justify-center items-center gap-3">
@@ -136,7 +146,7 @@ const Navber = () => {
                                                             <div className="rounded-full flex items-center">
                                                                 <img src={user.photoURL == null ? 'https://i.ibb.co/2vkJbGD/images.png' : user.photoURL} alt="" />
                                                             </div>
-                                                            <p className="text-[10px]">{user.displayName == null ?" MR. X" : user.displayName}</p>
+                                                            <p className="text-[10px]">{user.displayName == null ? " MR. X" : user.displayName}</p>
                                                         </> :
                                                             <>
 

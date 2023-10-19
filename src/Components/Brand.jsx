@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
+import Card from "./Card";
 
 
 const Brand = () => {
     const [brands, setBrands] = useState([])
     // console.log(brands);
     const data = useLoaderData()
-    console.log(data);
+    // console.log(data);
     
     useEffect(() => {
         fetch('/brand.json')
@@ -28,14 +29,11 @@ const Brand = () => {
                 </div>
             </div>
             <div  data-aos="zoom-in" className="grid grid-cols-1 md:grid-cols-3 gap-5 my-4">
-                {
+            {
                     brands.map(brand => (
-                        <li className="shadow-md rounded-md  text-center hover:bg-[#F5F6FB] p-2 flex items-center justify-center" key={brand.id}>
-                            <div>
-                                <img className="w-[150px]" src={brand.img} alt="" />
-                                <h1 className="p-5 text:2xl md:text-3xl text-gray-500 font-bold">{brand.brand_name}</h1>
-                            </div>
-                        </li>
+                      
+                       <Card key={brand.id} brand={brand}></Card>
+                        
                     ))
                 }
             </div>

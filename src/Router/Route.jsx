@@ -8,6 +8,7 @@ import Login from '../Components/Login';
 import Register from '../Components/Register';
 import PrivateRoute from './PrivateRoute';
 import ErrorPage from '../Pages/ErrorPage';
+import BrandProduct from '../Components/BrandProduct';
 
 const myRoute = createBrowserRouter([
     {
@@ -18,7 +19,7 @@ const myRoute = createBrowserRouter([
             {
                 path:'/',
                 element:<Home></Home>,
-                loader: () => fetch("http://localhost:5000/products"),
+                loader: () => fetch("https://brand-server-q8uf2nlj1-ronyahmeds-projects.vercel.app/products"),
             },
             {
                 path:'/addProduct',
@@ -36,6 +37,11 @@ const myRoute = createBrowserRouter([
             {
                 path:'/register',
                 element:<Register></Register>,
+            },
+            {
+                path:'/brandProduct/:brand_name',
+                element:<BrandProduct></BrandProduct>,
+                loader: () => fetch("https://brand-server-q8uf2nlj1-ronyahmeds-projects.vercel.app/products"),
             },
             
         ]

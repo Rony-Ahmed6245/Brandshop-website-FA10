@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { useEffect } from "react";
-import { useLoaderData } from "react-router-dom";
 import Card from "./Card";
 
 
 const Brand = () => {
     const [brands, setBrands] = useState([])
     // console.log(brands);
-    const data = useLoaderData()
+    // const data = useLoaderData()
     // console.log(data);
     
     useEffect(() => {

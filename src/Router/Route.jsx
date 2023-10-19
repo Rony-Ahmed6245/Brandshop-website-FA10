@@ -39,7 +39,7 @@ const myRoute = createBrowserRouter([
                 element:<Register></Register>,
             },
             {
-                path:'/brandProduct/:brand_name',
+                path:'/products/:brand_name',
                 element:<BrandProduct></BrandProduct>,
                 loader: () => fetch("https://brand-server-q8uf2nlj1-ronyahmeds-projects.vercel.app/products"),
             },

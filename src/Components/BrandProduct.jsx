@@ -10,9 +10,13 @@ const BrandProduct = () => {
         <div>
             {
                 filterData.length > 0 ? (
-                    filterData.map(brand => (
-                        <FilterBrandProduct key={brand._id} brand={brand} />
-                    ))
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    {
+                        filterData.map(brand => (
+                            <FilterBrandProduct key={brand._id} brand={brand} />
+                        ))
+                    }
+                    </div>
                 ) : (
                     <div className="h-screen w-full flex justify-center items-center">
                         <h1 className="text-3xl text-black">No data found</h1>

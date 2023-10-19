@@ -137,16 +137,17 @@ const Navber = () => {
                                     {
                                         user ? <>
                                             <div className=" flex justify-center items-center gap-3">
-                                                <Link onClick={handelLogout} className="btn btn-warning rounded-full font-bold bg-white text-gray-500 ">
+                                                <Link onClick={handelLogout} className="px-2 py-1 border rounded-full font-bold bg-white text-gray-500 ">
                                                     Logout
                                                 </Link>
-                                                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                                <label tabIndex={0} className="">
                                                     {
                                                         user ? <>
-                                                            <div className="rounded-full flex items-center">
-                                                                <img src={user.photoURL == null ? 'https://i.ibb.co/2vkJbGD/images.png' : user.photoURL} alt="" />
+                                                            <div className="flex gap-1 justify-center items-center">
+                                                                <p className="">{user.displayName == null ? " MR. X" : user.displayName}</p>
+                                                                <img className="rounded-full w-[50px] border-2" src={user.photoURL == null ? 'https://i.ibb.co/2vkJbGD/images.png' : user.photoURL} alt="" />
                                                             </div>
-                                                            <p className="text-[10px]">{user.displayName == null ? " MR. X" : user.displayName}</p>
+
                                                         </> :
                                                             <>
 

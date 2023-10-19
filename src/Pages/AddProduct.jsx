@@ -5,7 +5,7 @@ const handelAddproduct = e => {
     e.preventDefault();
 
     const form = e.target;
-    const photo = form.photo.value;
+    const photo = form.img.value;
     const name = form.name.value;
     // const brandName = form.brandName.value;
     const price = form.price.value;
@@ -51,7 +51,7 @@ const AddProduct = () => {
         <div>
             <div className=" max-w-7xl mx-auto h-screen ">
                 <div className=" w-full flex justify-center items-center my-10">
-                    <div className="shadow w-3/5 rounded-lg">
+                    <div className="shadow md:w-3/5 rounded-lg">
                         <h1 className="text-2xl font-bold text-gray-400 mt-4 text-center">Add Products</h1>
                         <form onSubmit={handelAddproduct} className="card-body px-4 ">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -59,7 +59,7 @@ const AddProduct = () => {
                                     <input type="text" placeholder="Name" name='name' className="input w-full input-bordered rounded-md" required />
                                 </div>
                                 <div className="form-control">
-                                    <input type="text" placeholder="PhotoURL" name='photo' className="input w-full input-bordered rounded-md" required />
+                                <input type="text" placeholder="Photo" name='img' className="input w-full input-bordered rounded-md" required />
                                 </div>
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -79,7 +79,7 @@ const AddProduct = () => {
                                         <option value="Mountain_dew">Mountain_dew</option>
                                         <option value="Starbucks">Starbucks</option>
                                         <option value="Nestle">Nestle</option>
-                                        <option value="Starbucks">Pepsi</option>
+                                        <option value="Pepsi">Pepsi</option>
                                     </select>
                                 </div>
                             <div className="form-control pt-2">

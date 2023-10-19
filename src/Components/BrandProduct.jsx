@@ -1,4 +1,4 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 import FilterBrandProduct from "./FilterBrandProduct";
 
 const BrandProduct = () => {
@@ -18,8 +18,9 @@ const BrandProduct = () => {
                     }
                     </div>
                 ) : (
-                    <div className="h-screen w-full flex justify-center items-center">
-                        <h1 className="text-3xl text-black">No data found</h1>
+                    <div className="h-screen w-full flex flex-col justify-center items-center">
+                        <h1 className="text-3xl text-black">Product not Available</h1>
+                        <Link to='/addProduct'><button className="text-xl underline">Please Add Product</button></Link>
                     </div>
                 )
             }

@@ -18,7 +18,7 @@ const handelAddproduct = e => {
     console.log(photo, name, brandName, price, textarea, rating,);
     const formData = { photo, name, brandName, textarea, price, rating }
 
-    fetch("https://brand-server-q8uf2nlj1-ronyahmeds-projects.vercel.app/products", {
+    fetch("https://brand-server.vercel.app/products", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -51,24 +51,24 @@ const AddProduct = () => {
         <div>
             <div className=" max-w-7xl mx-auto h-screen ">
                 <div className=" w-full flex justify-center items-center my-10">
-                    <div className="shadow md:w-3/5 rounded-lg">
+                    <div className="shadow border md:w-3/5 rounded-lg">
                         <h1 className="text-2xl font-bold text-gray-400 mt-4 text-center">Add Products</h1>
                         <form onSubmit={handelAddproduct} className="card-body px-4 ">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                                 <div className="form-control">
-                                    <input type="text" placeholder="Name" name='name' className="input w-full input-bordered rounded-md" required />
+                                    <input type="text" placeholder="Name" name='name' className="input w-full text-gray-500 input-bordered rounded-md" required />
                                 </div>
                                 <div className="form-control">
-                                <input type="text" placeholder="Photo" name='img' className="input w-full input-bordered rounded-md" required />
+                                <input type="text" placeholder="Photo" name='img' className="input w-full text-gray-500 input-bordered rounded-md" required />
                                 </div>
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                                
                                 <div className="form-control">
-                                <input type="text" placeholder="Rating" name='rating' className="input input-bordered rounded-md my-4" required />
+                                <input type="number" placeholder="Rating" name='rating' className="input text-gray-500 input-bordered rounded-md my-4" min='1' max="5" required />
                             </div>
                                 <div className="form-control">
-                                    <input type="text" placeholder="Price" name='price' className="input input-bordered rounded-md my-4" required />
+                                    <input type="number" min='50' placeholder="Price" name='price' className="input text-gray-500 input-bordered rounded-md my-4" required />
                                 </div>
                             </div>
                             <div className="form-control border-2  text-gray-400 rounded-md">
@@ -83,7 +83,7 @@ const AddProduct = () => {
                                     </select>
                                 </div>
                             <div className="form-control pt-2">
-                                <textarea className="border outline-none p-4 rounded-md" name="textarea" placeholder="Sort Description" id="" cols="15" rows="5"></textarea>
+                                <textarea className="border text-gray-500 outline-none p-4 rounded-md" name="textarea" placeholder="Sort Description" id="" cols="15" rows="5"></textarea>
                             </div>
                             
                             <div className="flex justify-center">

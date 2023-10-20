@@ -7,19 +7,21 @@ import Cart from '../Pages/Cart';
 import Login from '../Components/Login';
 import Register from '../Components/Register';
 import PrivateRoute from './PrivateRoute';
-import ErrorPage from '../Pages/ErrorPage';
+// import ErrorPage from '../Pages/ErrorPage';
 import BrandProduct from '../Components/BrandProduct';
+// import DetailPage from '../Pages/DetailCard';
+import DetailCard from '../Pages/DetailCard';
 
 const myRoute = createBrowserRouter([
     {
         path:'/',
         element:<MainLayout></MainLayout>,
-        errorElement: <ErrorPage />,
+        // errorElement: <ErrorPage />,
         children:[
             {
                 path:'/',
                 element:<Home></Home>,
-                loader: () => fetch("https://brand-server-q8uf2nlj1-ronyahmeds-projects.vercel.app/products"),
+                loader: () => fetch("https://brand-server.vercel.app/products"),
             },
             {
                 path:'/addProduct',
@@ -41,8 +43,14 @@ const myRoute = createBrowserRouter([
             {
                 path:'/products/:brand_name',
                 element:<BrandProduct></BrandProduct>,
-                loader: () => fetch("https://brand-server-q8uf2nlj1-ronyahmeds-projects.vercel.app/products"),
+                loader: () => fetch("https://brand-server.vercel.app/products"),
             },
+            {
+                path:'/detailcard/:id',
+                element:<PrivateRoute><DetailCard/></PrivateRoute>,
+               loader:()=> fetch('https://brand-server.vercel.app/products')
+            }
+           
             
         ]
     }

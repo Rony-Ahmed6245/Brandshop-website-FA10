@@ -2,26 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-.banner{
+.body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.banner {
     background-image: url('https://i.ibb.co/Th8wfqz/pattern-1.png');
     background-repeat: no-repeat;
     /* background-size: cover;   */
-    background-color: #BEB996;
+    background-color: #2B3440;
     background-position: bottom;
 }
 
-.bg-img{
-background-image: url('https://i.ibb.co/xSXRBs4/icon-1-1.png');
-background-repeat: no-repeat;
-background-position:right bottom;
-}
-.footer-bg{
-background-image: url('https://i.ibb.co/Qr4VsDP/Raspberry-Single-Page-overlay.png');
-background-repeat: no-repeat;
-background-size: cover;
-width:100%;
-height: fit-content;
+.bg-img {
+    background-image: url('https://i.ibb.co/xSXRBs4/icon-1-1.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }
 
-
-
+.footer-bg {
+    background-image: url('https://i.ibb.co/Qr4VsDP/Raspberry-Single-Page-overlay.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+}

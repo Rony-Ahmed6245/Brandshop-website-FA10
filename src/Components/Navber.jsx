@@ -9,7 +9,7 @@ import { BsCart2 } from "react-icons/bs";
 const Navber = () => {
 
     const { user, logOut } = useContext(AuthContext)
-    console.log(user);
+    // console.log(user);
 
     const handelLogout = () => {
         logOut()
@@ -37,7 +37,7 @@ const Navber = () => {
     const home = <NavLink
         to="/"
         className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? " text-black border px-2 py-1 rounded font-bold bgTrans " : ""
+            isPending ? "pending" : isActive ? "  border-b-2 px-2 py-1 rounded font-bold bgTrans " : ""
         }
     >
         HOME
@@ -45,7 +45,7 @@ const Navber = () => {
     const addProduct = <NavLink
         to="/addProduct"
         className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? " text-black border px-2 py-1 rounded font-bold bgTrans " : ""
+            isPending ? "pending" : isActive ? "  border-b-2 px-2 py-1 rounded font-bold bgTrans " : ""
         }
     >
         ADD PRODUCT
@@ -68,20 +68,20 @@ const Navber = () => {
 
     return (
         <div>
-            <div className="bg-[#BEB996] ">
-                <marquee className="bg-[#2B3440]" direction="">
-                    <h1 className="text-sm font-normal text-white md:py-4">
+            <div className="bg-[#2B3440] ">
+                <marquee className="" direction="">
+                    <h1 className="text-sm font-normal text-white ">
                         ENJOY THE ESSENCE OF ENIGMATIC SPICES!
                     </h1>
                 </marquee>
 
-                <div className="max-w-screen-xl py-5  mx-auto md:px-2">
+                <div className="max-w-screen-xl  mx-auto md:px-2">
 
                     <div className="px-4 md:px-4 lg:px-4   bg-none z-30 relative ">
                         <div className="navbar flex justify-between items-center ">
                             <div>
-                                <img className="w-[120px] " src={'https://i.ibb.co/64491Jh/logo-2.png'} alt="" />
-
+                                <img className="w-[70px] " src={'https://i.ibb.co/1ZPL0Wm/icon-2.png'} alt="" />
+                                <h1 className="text-3xl text-white font-bold uppercase">food<span className="text-4xl lowercase">i</span>ly</h1>
                             </div>
                             <div className="">
                                 <div className="dropdown">
@@ -111,7 +111,7 @@ const Navber = () => {
                                                                 </>
                                                         }
                                                     </label>
-                                                    <Link onClick={handelLogout} className="btn-sm btn btn-warning my-3 py-2 px-4 rounded-full font-bold bg-white text-gray-500 ">
+                                                    <Link onClick={handelLogout} className="btn-sm btn uppercase btn-warning my-3 py-2 px-4 rounded-full font-bold bg-white text-gray-500 ">
                                                         Logout
                                                     </Link>
                                                 </div>
@@ -137,7 +137,7 @@ const Navber = () => {
                                     {
                                         user ? <>
                                             <div className=" flex justify-center items-center gap-3">
-                                                <Link onClick={handelLogout} className="px-2 py-1 border rounded-full font-bold bg-white text-gray-500 ">
+                                                <Link onClick={handelLogout} className="px-2 uppercase py-1 border rounded-full font-bold bg-white text-gray-500 ">
                                                     Logout
                                                 </Link>
                                                 <label tabIndex={0} className="">

@@ -79,13 +79,13 @@ const Register = () => {
                             <h1 className="text-2xl font-bold text-gray-400 mt-4 text-center">Please Register & Access Brand Service</h1>
                             <form onSubmit={handelRegister} className="card-body px-4 ">
                                 <div className="form-control">
-                                    <input type="text" placeholder="Name" name='name' className="input w-full input-bordered rounded-md" required />
+                                    <input type="text" placeholder="Name" name='name' className="text-gray-500 input w-full input-bordered rounded-md" required />
                                 </div>
                                 <div className="form-control">
-                                    <input type="email" placeholder="Email" name='email' className="input input-bordered rounded-md my-4" required />
+                                    <input type="email" placeholder="Email" name='email' className="text-gray-500 input input-bordered rounded-md my-4" required />
                                 </div>
                                 <div className="form-control">
-                                    <input type="password" name='password' placeholder="Password" className="input input-bordered rounded-md" required />
+                                    <input type="password" name='password' placeholder="Password" className="text-gray-500 input input-bordered rounded-md" required />
                                 </div>
                                 <h1 className="text-sm p-2">Forget Password</h1>
                                 {/* Display the error message */}

@@ -12,7 +12,10 @@ const Footer = () => {
                     <a className="link link-hover">Advertisement</a>
                 </nav>
                 <nav>
-                    <header className="footer-title"><img className="" src="https://i.ibb.co/64491Jh/logo-2.png" alt="" /></header>
+                    <div className="flex w-10">
+                        <img className="w-[70px] " src={'https://i.ibb.co/1ZPL0Wm/icon-2.png'} alt="" />
+                        <h1 className="text-3xl font-bold uppercase">food<span className="text-4xl lowercase">i</span>ly</h1>
+                    </div>
                     <a className="link link-hover">About us</a>
                     <a className="link link-hover">Contact</a>
                     <a className="link link-hover">Jobs</a>

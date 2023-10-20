@@ -71,13 +71,13 @@ const Login = () => {
                         <h1 className="text-2xl font-bold text-gray-400 mt-4 text-center">Please Login & Access Brand Service</h1>
                         <form onSubmit={handelLogin}  className="card-body px-4 ">
                             <div className="form-control">
-                                <input type="text" name="name" placeholder="Name" className="input w-full input-bordered rounded-md" required />
+                                <input type="text" name="name" placeholder="Name" className="input text-gray-500 w-full input-bordered rounded-md" required />
                             </div>
                             <div className="form-control">
-                                <input type="email" name="email" placeholder="Email" className="input input-bordered rounded-md my-4" required />
+                                <input type="email" name="email" placeholder="Email" className="input text-gray-500 input-bordered rounded-md my-4" required />
                             </div>
                             <div className="form-control">
-                                <input type="password" name="password" placeholder="Password" className="input input-bordered rounded-md" required />
+                                <input type="password" name="password" placeholder="Password" className="input text-gray-500 input-bordered rounded-md" required />
                             </div>
                             <h1 className="text-sm p-2">Forget Password</h1>
                             {

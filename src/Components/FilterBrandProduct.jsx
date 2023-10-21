@@ -21,7 +21,7 @@ const FilterBrandProduct = ({ brand }) => {
                     <Rating name="size-medium" defaultValue={rating} />
                     <div className="flex justify-between items-center mt-2">
                         <Link to={`/detailcard/${_id}`}><button className='py-1 px-3 uppercase font-bold border rounded-md'>details</button></Link>
-                        <button className="border rounded-md uppercase font-bold px-2 py-1">Update</button>
+                       <Link to={`/updatedProduct/${_id}`}> <button className="border rounded-md uppercase font-bold px-2 py-1">Update</button></Link>
                     </div>
                 </div>
             </div>

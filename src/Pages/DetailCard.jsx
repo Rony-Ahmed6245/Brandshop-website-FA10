@@ -4,14 +4,14 @@ import { useLoaderData, useParams } from "react-router-dom";
 
 const DetailCard = () => {
     const data = useLoaderData();
-    console.log(data);
+    // console.log(data);
 
     const { id } = useParams()
-    console.log(id);
+    // console.log(id);
 
 
     const products = data.find((item) => item._id === id);
-    console.log(products);
+    // console.log(products);
     const { rating
         , photo, name, brandName, textarea } = products || {}
 
@@ -20,7 +20,7 @@ const DetailCard = () => {
             <div className="max-h-screen">
                 <div className="card lg:card-side border shadow-lg p-4">
                     <figure><img className="w-[300px]" src={photo} alt="Album" /></figure>
-                    <div className="card-body border-l-2">
+                    <div className="card-body md:border-l-2">
                         <h2 className="text-gray-500 text-4xl font-bold uppercase">{name}</h2>
                         <p className="text-xl text-gray-400">{textarea}</p>
                         <h2 className="  text-2xl  uppercase rounded-full">Brand: {brandName}</h2>

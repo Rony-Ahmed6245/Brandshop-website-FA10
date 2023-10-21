@@ -52,7 +52,7 @@ const AddProduct = () => {
             <div className=" max-w-7xl mx-auto h-screen ">
                 <div className=" w-full flex justify-center items-center my-10">
                     <div className="shadow border md:w-3/5 rounded-lg">
-                        <h1 className="text-2xl font-bold text-gray-400 mt-4 text-center">Add Products</h1>
+                        <h1 className="text-2xl font-bold text-gray-400 mt-4 text-center uppercase">Add Products</h1>
                         <form onSubmit={handelAddproduct} className="card-body px-4 ">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                                 <div className="form-control">

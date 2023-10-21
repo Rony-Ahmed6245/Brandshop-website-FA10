@@ -7,51 +7,56 @@ import Cart from '../Pages/Cart';
 import Login from '../Components/Login';
 import Register from '../Components/Register';
 import PrivateRoute from './PrivateRoute';
-// import ErrorPage from '../Pages/ErrorPage';
+import ErrorPage from '../Pages/ErrorPage';
 import BrandProduct from '../Components/BrandProduct';
-// import DetailPage from '../Pages/DetailCard';
 import DetailCard from '../Pages/DetailCard';
+import Updated from '../Pages/Updated';
 
 const myRoute = createBrowserRouter([
     {
-        path:'/',
-        element:<MainLayout></MainLayout>,
-        // errorElement: <ErrorPage />,
-        children:[
+        path: '/',
+        element: <MainLayout></MainLayout>,
+        errorElement: <ErrorPage />,
+        children: [
             {
-                path:'/',
-                element:<Home></Home>,
+                path: '/',
+                element: <Home></Home>,
                 loader: () => fetch("https://brand-server.vercel.app/products"),
             },
             {
-                path:'/addProduct',
+                path: '/addProduct',
                 element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>,
             },
             {
-                path:'/cart',
-                element:<Cart></Cart>,
+                path: '/cart',
+                element: <PrivateRoute><Cart></Cart></PrivateRoute>,
             },
             {
-                path:'/login',
-                element:<Login></Login>,
+                path: '/login',
+                element: <Login></Login>,
             }
             ,
             {
-                path:'/register',
-                element:<Register></Register>,
+                path: '/register',
+                element: <Register></Register>,
             },
             {
-                path:'/products/:brand_name',
-                element:<BrandProduct></BrandProduct>,
+                path: '/products/:brand_name',
+                element: <BrandProduct></BrandProduct>,
                 loader: () => fetch("https://brand-server.vercel.app/products"),
             },
             {
-                path:'/detailcard/:id',
-                element:<PrivateRoute><DetailCard/></PrivateRoute>,
-               loader:()=> fetch('https://brand-server.vercel.app/products')
+                path: '/detailcard/:id',
+                element: <PrivateRoute><DetailCard /></PrivateRoute>,
+                loader: () => fetch('https://brand-server.vercel.app/products')
+            },
+            {
+                path: '/updatedProduct/:id',
+                element: <PrivateRoute><Updated></Updated></PrivateRoute>,
+                loader: () => fetch(`https://brand-server.vercel.app/products/`)
+
             }
-           
-            
+
         ]
     }
 ])

@@ -1,7 +1,6 @@
-
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { BsFillSunFill,BsMoon } from "react-icons/bs";
+import { BsFillSunFill, BsMoon } from 'react-icons/bs';
 
 const ToggleButton = styled.button`
   background: ${props => (props.darkMode ? 'black' : 'white')};
@@ -36,7 +35,7 @@ const DarkModeToggle = () => {
 
   return (
     <ToggleButton darkMode={darkMode} onClick={handleToggle}>
-      {darkMode ? <BsFillSunFill></BsFillSunFill> : <BsMoon></BsMoon>}
+      {darkMode ? <BsFillSunFill /> : <BsMoon />}
     </ToggleButton>
   );
 };

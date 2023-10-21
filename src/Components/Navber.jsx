@@ -16,7 +16,7 @@ const Navber = () => {
             .then(result => {
                 // console.log(result);
                 swal("Success", "Logout successfully", "success")
-                return
+                return;
             })
             .catch(err => {
                 swal("Error", "Logout not successfully", "Error")

@@ -1,4 +1,4 @@
-import { Carousel } from "react-responsive-carousel";
+
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import FilterBrandProduct from "./FilterBrandProduct";
 
@@ -13,16 +13,7 @@ const BrandProduct = () => {
     return (
         <div>
             
-{/* 
-            <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-neutral rounded-box">
-                <div className="carousel-item">
-                {filterData.map(brand => (
-                        <div key={brand._id}>
-                            <img className="w-[200px]" src={brand.photo} alt={brand.name} />
-                        </div>
-                    ))}
-                </div>
-            </div> */}
+
 
 
 

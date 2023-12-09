@@ -1,8 +1,17 @@
-<div>LiveLink: https://food-brand-assignment-10.web.app/ <br/>
-ClientSide : https://github.com/programming-hero-web-course-4/b8a10-brandshop-client-side-Rony-Ahmed6245.git <br/>
-ServerSide: https://github.com/programming-hero-web-course-4/b8a10-brandshop-server-side-Rony-Ahmed6245.git
+<div>
+ <h3 align="center">---All necessary links ---</h3>      
+1. LiveLink: https://food-brand-assignment-10.web.app/ <br/>
+2. ClientSide : https://github.com/programming-hero-web-course-4/b8a10-brandshop-client-side-Rony-Ahmed6245.git <br/>
+3. ServerSide: https://github.com/programming-hero-web-course-4/b8a10-brandshop-server-side-Rony-Ahmed6245.git
+            <h3 align="center">---All necessary links ---</h3>  
+             1.React <br>
+            2.React Router dom <br>
+            3.Tailwind css & deyisUI <br>
+            4.MongoDB <br> 
+            5.NodeJS and <br>
+            6.ExpressJs etc <br> 
             <img src="https://i.ibb.co/hY2vLLD/food-brand-assignment-10-web-app-1-1.png" alt="" />
-            <h1>Add at least 5 Project features</h1>
+             <h3 align="center">---Project features ---</h3> 
             <h3>1/Feature: Website brand services </h3>
             <img src="https://i.ibb.co/MSsgMfG/brands-1.png" alt="" />
             <p>

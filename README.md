@@ -10,8 +10,8 @@
             4.MongoDB <br> 
             5.NodeJS and <br>
             6.ExpressJs etc <br> 
-            <img src="https://i.ibb.co/hY2vLLD/food-brand-assignment-10-web-app-1-1.png" alt="" />
-             <h3 align="center">---Project features ---</h3> 
+  <h3 align="center">---Project features ---</h3> 
+            <img src="https://i.ibb.co/hY2vLLD/food-brand-assignment-10-web-app-1-1.png" alt="" /> 
             <h3>1/Feature: Website brand services </h3>
             <img src="https://i.ibb.co/MSsgMfG/brands-1.png" alt="" />
             <p>

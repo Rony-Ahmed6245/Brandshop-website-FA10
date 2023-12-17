@@ -2,7 +2,7 @@
  <h3 align="center">---All necessary links ---</h3>      
 1. LiveLink: https://food-brand-assignment-10.web.app/ <br/>
 2. ClientSide : https://github.com/Rony-Ahmed6245/Brandshop-website-FA10.git<br/>
-3. ServerSide: https://github.com/programming-hero-web-course-4/b8a10-brandshop-server-side-Rony-Ahmed6245.git
+3. ServerSide: https://github.com/Rony-Ahmed6245/b8a10-brandshop-server-side-Rony-Ahmed6245.git
             <h3 align="center">---Used Technology ---</h3>  
              1.React <br>
             2.React Router dom <br>
